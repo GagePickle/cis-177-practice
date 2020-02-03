@@ -7,7 +7,7 @@
     "serve": "browser-sync start --server --files '*.html, *.css, *.js'"
   },
   "keywords": [],
-  "author": "Gage",
+  "author": "Gage Pickle",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
