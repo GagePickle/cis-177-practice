@@ -1,24 +1,27 @@
-// create a variable "timeOfDay" and assign it a string
-let timeOfDay = "Afternoon";
-// create a variable "greeting" that references a template literal
-// use "timeOfDay" in the template literal to create a message like "Good morning!" or "Good evening!"
-let greeting = `Good ${timeOfDay}`;
-// print "greeting"
-console.log(greeting);
-// create a new variable, but do not assign it a value
+// not defined means theres no place in memory
+// undefined is a PRIMITIVE TYPE.
+// It signifies the absence of ANY value
 let x;
-// print the variable and its type
+
+x = 23;
 console.log(typeof x);
-// ? what type should we expect? undefined
-// assign the variable a value that indicates the variable is purposely blank
-x = null;
-// ? what value should we assign? null
-// print the variable and its type again
-console.log(typeof x);
-// ? what type should we expect? object
-// try to print a variable that does not exist
-console.log(y);
-// ? what should we expect to print in the CLI? an undefined error
-// print "greeting" again
-console.log(greeting);
-// ? will this line run? no because there is an error before it
+x = 0;
+// NULL is a PRIMITIVE TYPE
+// NULL represents a deliberate assignment of 'nothing.'
+// let x = null;
+console.log(x);
+// This is a JS OBJECT.
+// You can nest things inside objects
+const me = {
+  name: "Gage",
+  age: 23,
+  pets: {
+    cat: "Wheat",
+    dog2: "Lucy"
+  }
+};
+
+// Create a new key value pair with age = 23
+me.age = 22;
+me.name = "Jeff";
+console.log(me.pet.cat); // undefined.cat and undefined is a primitive so it can not use keys/.notation because it is not an object
