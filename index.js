@@ -1,20 +1,17 @@
-const x = 3;
+// JS is DYNAMICALLY TYPED language
+const name = "";
 
-// an EXPRESSION is anything that evaluates to a value
-// STATEMENTS combine EXPRESSIONS with keywords and other syntax
-// {}s establish scope of the code.
-if (x === 3) {
-  console.log("x is 3!");
+// We can quickly check to see if a value is `true` or `false`
+// For example, if I left the `name` blank on a form
+if (name) {
+  console.log("the user filled out the name");
 } else {
-  console.log("x is not 3!");
+  console.error("User left name blank");
 }
 
-const age = 25;
-
-if (age >= 25) {
-  console.log("Renting a car is affordable");
-} else if (age >= 18) {
-  console.log("Renting a car will be expensive!");
-} else {
-  console.log("You can't rent a car!");
+if (name === "") {
+  console.log("user left this blank");
 }
+console.log(Boolean(3)); // true
+
+console.log(Boolean(0)); // false
