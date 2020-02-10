@@ -19,3 +19,11 @@ me.features.hair = "Brown";
 console.log(me.features.gender);
 console.log(me.features.hair);
 console.log(me.features.alive);
+// Bracket notation
+// use BRACKET NOTATION to access a key that is REFERENCED by a VARIABLE.
+const keyThatINeed = "hair";
+// Template literal using bracket notation and dot notation
+console.log(`Bracket notation with variable:`, me.features[keyThatINeed]);
+console.log(`Bracket notation with string: ${me["keyThatINeed"]}`); // undefined
+// console.log(me[keyThatINeed][hair]); // you can chain with bracket notation
+console.log(me["keyThatINeed"]); // undefined
