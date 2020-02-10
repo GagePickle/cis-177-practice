@@ -1,19 +1,21 @@
-// Global variables cs. Object keys
-const x = 28;
-const name = "fake";
-
+// Nested object
 const me = {
   name: "Gage",
-  age: 22
+  age: 22,
+  major: "Web Development",
+  features: {
+    eyes: "Green",
+    hair: "Black",
+    alive: true
+  }
 };
-
-me.name = "Jeff";
-me.age = 23;
-// Reference the GLOBAL VARIABLE
-console.log(name);
-// Reference the key 'name' inside of the OBJECT me.
-console.log(me.name);
-console.log(me.age);
-
-console.log(console);
 console.log(me);
+// Add key value pair using dot notation
+me.features.gender = "Male";
+// Change values of key value pairs
+me.name = "Gage Pickle";
+me.features.hair = "Brown";
+// Log values of nested object
+console.log(me.features.gender);
+console.log(me.features.hair);
+console.log(me.features.alive);
