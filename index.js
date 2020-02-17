@@ -1,19 +1,21 @@
-// True because PRIMITIVES are COMPARED by VALUE
-console.log(49 === 49);
+// PASS by VALUE
+let x = 3;
 
-const a = 49;
-const b = 49;
-// FALSE because OBJECTS are COMPARED by REFERENCE
-console.log(a === b);
+// PRIMITIVES CANNOT MUTATE
+// '3' that was used with 'x' previously is completely thrown out and replaced with '4'
+x = 4;
+let y = x;
 
-const x = {
+console.log(y);
+
+// PASS BY REFERENCE
+const a = {
   name: "Gage"
 };
+// B will point to the same memory address as a.
+// What happens to 1 will affect the other.
+const b = a;
 
-const y = {
-  name: "Gage"
-};
+a.name = "Bill";
 
-// FALSE because OBJECTS are COMPARED by REFERENCE aka it compares the object names not the values
-console.log(x === y);
-console.log({ a: 42 } === { a: 42 }); // Is still false never compare objects
+console.log(b.name);
