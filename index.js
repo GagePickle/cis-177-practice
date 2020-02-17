@@ -1,14 +1,19 @@
-const x = 3;
-// Anything that creates a value is an expression below is an expression
-const name = "hello";
+// True because PRIMITIVES are COMPARED by VALUE
+console.log(49 === 49);
 
-// TODO: Check if x is ODD AND if it's less than 10.
-if (x % 2 === 1 && x < 10) {
-  console.log("X is odd because it has a remainder of 1");
-}
-console.log(7 % 2);
+const a = 49;
+const b = 49;
+// FALSE because OBJECTS are COMPARED by REFERENCE
+console.log(a === b);
 
-// TODO: Check if x is ODD OR if it's less than 10.
-if (x % 2 === 1 || x < 10) {
-  console.log("X is odd because it has a remainder of 1");
-}
+const x = {
+  name: "Gage"
+};
+
+const y = {
+  name: "Gage"
+};
+
+// FALSE because OBJECTS are COMPARED by REFERENCE aka it compares the object names not the values
+console.log(x === y);
+console.log({ a: 42 } === { a: 42 }); // Is still false never compare objects
