@@ -1,17 +1,14 @@
-// JS is DYNAMICALLY TYPED language
-const name = "";
+const x = 3;
+// Anything that creates a value is an expression below is an expression
+const name = "hello";
 
-// We can quickly check to see if a value is `true` or `false`
-// For example, if I left the `name` blank on a form
-if (name) {
-  console.log("the user filled out the name");
-} else {
-  console.error("User left name blank");
+// TODO: Check if x is ODD AND if it's less than 10.
+if (x % 2 === 1 && x < 10) {
+  console.log("X is odd because it has a remainder of 1");
 }
+console.log(7 % 2);
 
-if (name === "") {
-  console.log("user left this blank");
+// TODO: Check if x is ODD OR if it's less than 10.
+if (x % 2 === 1 || x < 10) {
+  console.log("X is odd because it has a remainder of 1");
 }
-console.log(Boolean(3)); // true
-
-console.log(Boolean(0)); // false
