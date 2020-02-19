@@ -1,21 +1,20 @@
-// PASS by VALUE
-let x = 3;
+// Fizz Buzz
+// Log the numbers from 1 to 100.
+// However, if the number is divisible by 3 log 'Fizz!'
+// If the number is divisible by 5 log 'Buzz!'
+// If the number is divisible by 3 and 5 log 'FizzBuzz!'
 
-// PRIMITIVES CANNOT MUTATE
-// '3' that was used with 'x' previously is completely thrown out and replaced with '4'
-x = 4;
-let y = x;
+let x = 0;
 
-console.log(y);
-
-// PASS BY REFERENCE
-const a = {
-  name: "Gage"
-};
-// B will point to the same memory address as a.
-// What happens to 1 will affect the other.
-const b = a;
-
-a.name = "Bill";
-
-console.log(b.name);
+while (x < 100) {
+  x += 1;
+  if (x % 3 === 0 && x % 5 === 0) {
+    console.log(x + " FizzBuzz!");
+  } else if (x % 3 === 0) {
+    console.log(x + " Fizz!");
+  } else if (x % 5 === 0) {
+    console.log(x + " Buzz!");
+  } else {
+    console.log(x);
+  }
+}
